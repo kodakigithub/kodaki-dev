@@ -1,0 +1,25 @@
+---
+title: "ikkii"
+role: "creator · full stack"
+description: "on-chain 1v1 gaming duel platform — SPL token wagers with on-chain escrow settlement on Solana"
+tech: ["Bun", "Hono", "Solana", "Rust (Anchor)", "Redis", "WebSockets"]
+status: "active"
+date: "2026-03-01"
+github: "https://github.com/kodakigithub/ikkii"
+---
+
+# ikkii
+
+Ikkii is a competitive gaming platform for 1v1 wagers using SPL tokens. Two players stake into an on-chain escrow, play the match off-chain, and the settlement happens trustlessly on Solana — no house, no custody, just code.
+
+## How It Works
+
+- **Off-chain match verification, on-chain settlement** — games run in real time off-chain while funds sit in a PDA-based escrow on Solana, settled automatically when the result is verified
+- **Real-time duel state sync** via WebSockets and Redis pub/sub, handling 100+ concurrent events with consistent state reconciliation
+- **Solana smart contracts in Rust (Anchor)** with PDA-based state management and enforced lifecycle transitions for secure escrow handling
+- **Backend APIs with Hono + Drizzle ORM**, averaging under 120ms response time in load-tested conditions
+- **Redis-based rate limiting and Sentry monitoring**, reducing API abuse and keeping the system observable during peak usage
+
+## Links
+
+- GitHub: [github.com/kodakigithub/ikkii](https://github.com/kodakigithub/ikkii)
