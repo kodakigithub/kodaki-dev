@@ -1,6 +1,6 @@
 # kodaki-dev
 
-personal portfolio of Harsh Chauhan — terminal-inspired, keyboard-navigable, ascii-art everything.
+My personal portfolio — terminal-inspired, keyboard-navigable, ascii-art everything.
 
 ## stack
 
