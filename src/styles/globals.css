@@ -17,8 +17,8 @@
     --popover: 17 17 17;
     --popover-foreground: 209 213 219;
 
-    --primary: 144 104 247;
-    /* #9068F7 */
+    --primary: 255 176 0;
+    /* #FFB000 */
     --primary-foreground: 17 17 17;
 
     --secondary: 39 39 42;
@@ -28,7 +28,7 @@
     --muted-foreground: 114 119 128;
     /* #727780 */
 
-    --accent: 144 104 247;
+    --accent: 255 176 0;
     --accent-foreground: 17 17 17;
 
     --destructive: 239 68 68;
@@ -36,16 +36,16 @@
 
     --border: 63 63 70;
     --input: 31 31 36;
-    --ring: 144 104 247;
+    --ring: 255 176 0;
 
     --heading: 255 255 255;
     /* #FFFFFF */
-    --terminal-purple: 144 104 247;
-    /* #9068F7 */
-    --terminal-bright-purple: 164 124 255;
+    --terminal-purple: 255 176 0;
+    /* #FFB000 */
+    --terminal-bright-purple: 255 201 77;
     /* Slightly brighter version */
     --terminal-dark: 17 17 17;
-    --crt-glow: 144 104 247;
+    --crt-glow: 255 176 0;
 
     --radius: 0.25rem;
   }
@@ -63,7 +63,7 @@
   body {
     @apply text-foreground font-mono h-full overflow-hidden overflow-x-hidden;
     font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace;
-    background: #1a1a1a;
+    background: #1C1811;
     /* Prevent text size adjustment on orientation change on iOS */
     -webkit-text-size-adjust: 100%;
     /* Improve touch scrolling on iOS */
@@ -81,9 +81,9 @@
       0 0 1px currentColor,
       0 0 2px currentColor,
       /* Mid glow */
-      0 0 4px rgba(144, 104, 247, 0.4),
+      0 0 4px rgba(255, 176, 0, 0.4),
       /* Outer glow */
-      0 0 6px rgba(144, 104, 247, 0.2);
+      0 0 6px rgba(255, 176, 0, 0.2);
     filter: brightness(1.05) contrast(0.95);
   }
 
@@ -102,7 +102,7 @@
     height: 100%;
     background: linear-gradient(to right,
         transparent,
-        rgba(144, 104, 247, 0.1),
+        rgba(255, 176, 0, 0.1),
         transparent);
     transform: skewX(-25deg);
     animation: glitchShine 0.5s;
@@ -121,11 +121,11 @@
   /* Text Gradient Flow Animation */
   .text-gradient-flow {
     background: linear-gradient(to right,
-        #9068F7 20%,
-        #A78BFA 40%,
+        #FFB000 20%,
+        #FFC94D 40%,
         #ffffff 50%,
-        #A78BFA 60%,
-        #9068F7 80%);
+        #FFC94D 60%,
+        #FFB000 80%);
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
@@ -142,12 +142,12 @@
 
   /* Enhanced Terminal Window Styling */
   .terminal-window {
-    background: #111111;
+    background: #16130C;
     border: 1px solid rgba(63, 63, 70, 0.8);
     border-radius: var(--radius);
     box-shadow:
-      0 0 25px rgba(160, 32, 240, 0.08),
-      inset 0 1px 0 rgba(160, 32, 240, 0.05),
+      0 0 25px rgba(255, 176, 0, 0.08),
+      inset 0 1px 0 rgba(255, 176, 0, 0.05),
       0 4px 20px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(2px);
   }
@@ -164,11 +164,11 @@
 
   /* Terminal Window Styling */
   .terminal-main {
-    background: #111111;
+    background: #16130C;
     border-radius: var(--radius);
     box-shadow:
-      0 0 30px rgba(147, 51, 234, 0.1),
-      inset 0 1px 0 rgba(147, 51, 234, 0.05),
+      0 0 30px rgba(255, 176, 0, 0.1),
+      inset 0 1px 0 rgba(255, 176, 0, 0.05),
       0 6px 25px rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(3px);
   }
@@ -185,7 +185,7 @@
     border-bottom: 1px solid rgba(63, 63, 70, 0.3);
     padding: 6px 12px;
     font-size: 0.75rem;
-    color: rgb(144, 104, 247);
+    color: rgb(255, 176, 0);
   }
 
   .terminal-section-content {
@@ -194,7 +194,7 @@
 
   /* Command Line Styling */
   .command-line {
-    border-left: 3px solid rgba(147, 51, 234, 0.6);
+    border-left: 3px solid rgba(255, 176, 0, 0.6);
     padding-left: 12px;
   }
 
@@ -219,7 +219,7 @@
     transition: all 0.2s ease;
     box-shadow:
       0 2px 4px rgba(0, 0, 0, 0.3),
-      inset 0 1px 0 rgba(147, 51, 234, 0.1);
+      inset 0 1px 0 rgba(255, 176, 0, 0.1);
   }
 
   .retro-button:hover {
@@ -227,10 +227,10 @@
         rgba(63, 63, 70, 0.5),
         rgba(31, 31, 36, 0.6));
     box-shadow:
-      0 0 15px rgba(147, 51, 234, 0.2),
+      0 0 15px rgba(255, 176, 0, 0.2),
       0 4px 8px rgba(0, 0, 0, 0.4),
-      inset 0 1px 0 rgba(147, 51, 234, 0.2);
-    border-color: rgba(147, 51, 234, 0.5);
+      inset 0 1px 0 rgba(255, 176, 0, 0.2);
+    border-color: rgba(255, 176, 0, 0.5);
   }
 
   /* Terminal Link Styling */
@@ -383,15 +383,15 @@
   background: rgb(24, 24, 27);
 }
 
-::-webkit-scrollbar-thumb {
-  background: rgba(167, 139, 250, 0.5);
+  ::-webkit-scrollbar-thumb {
+  background: rgba(255, 201, 77, 0.5);
   border-radius: 4px;
   border: 3px solid rgb(24, 24, 27);
   background-clip: padding-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(139, 92, 246, 0.8);
+  background: rgba(255, 176, 0, 0.8);
   border: 3px solid rgb(24, 24, 27);
   background-clip: padding-box;
 }

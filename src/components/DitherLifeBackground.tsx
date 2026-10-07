@@ -9,7 +9,7 @@ const SEED_DENSITY = 0.1;
 const FADE_SPEED = 0.9;
 const MAX_ALPHA = 0.35;
 const RESEED_POPULATION = 0.015;
-const DOT_COLOR = 'rgb(144, 104, 247)';
+const DOT_COLOR = 'rgb(255, 176, 0)';
 
 // Classic glider — makes the automaton unmistakably Conway's Game of Life
 const GLIDER = [

@@ -42,9 +42,9 @@ const TopNav = () => {
                 onFocus={section.onHover}
                 aria-label={`Navigate to ${section.label}`}
                 aria-current={active ? 'page' : undefined}
-                className={`transition-colors ${active ? 'text-purple-400' : 'text-zinc-500 hover:text-zinc-200'}`}
+                className={`transition-colors ${active ? 'text-amber-400' : 'text-zinc-500 hover:text-zinc-200'}`}
               >
-                <span className={active ? 'text-purple-400/60' : 'text-zinc-700'}>[{section.shortcut}]</span> {section.label}
+                <span className={active ? 'text-amber-400/60' : 'text-zinc-700'}>[{section.shortcut}]</span> {section.label}
               </button>
             );
           })}
@@ -57,7 +57,7 @@ const TopNav = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={label}
-              className="text-zinc-500 hover:text-purple-400 transition-colors"
+              className="text-zinc-500 hover:text-amber-400 transition-colors"
             >
               <Icon className="w-3.5 h-3.5" />
             </a>

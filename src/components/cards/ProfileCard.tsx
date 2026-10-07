@@ -9,7 +9,7 @@ interface ProfileCardProps {
 // No leading-none and no explicit font: the default line height and the inherited
 // Geist Mono are what produce the segmented-display texture in the block glyphs
 const logoClasses = 'text-[5px] xs:text-[6px] sm:text-[7px] md:text-[8px] whitespace-pre';
-const logoStyle = { color: '#9068F7' } as const;
+const logoStyle = { color: '#FFB000' } as const;
 
 const ProfileCard = ({ description }: ProfileCardProps) => {
   return (

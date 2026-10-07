@@ -71,10 +71,10 @@ export default {
 				terminal: {
 					purple: 'hsl(var(--terminal-purple))',
 					'bright-purple': 'hsl(var(--terminal-bright-purple))',
-					bg: '#111111',
+					bg: '#16130C',
 					text: '#D1D5DB',
 					muted: '#727780',
-					accent: '#9068F7',
+					accent: '#FFB000',
 					blue: '#60A5FA',
 					green: '#4ADE80',
 					yellow: '#FBBF24',

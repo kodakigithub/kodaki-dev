@@ -31,7 +31,7 @@ export default async function RootLayout({
         <Providers>
           <DataProvider posts={posts} projects={projects}>
             {/* Common layout for all pages - Single source of truth */}
-            <div className="h-screen w-screen fixed inset-0 overflow-hidden flex p-1 sm:p-1.5 md:p-2 lg:p-3 pb-16 lg:pb-3" style={{ background: '#1a1a1a' }}>
+            <div className="h-screen w-screen fixed inset-0 overflow-hidden flex p-1 sm:p-1.5 md:p-2 lg:p-3 pb-16 lg:pb-3" style={{ background: '#1C1811' }}>
               <div className="flex-1 h-full">
                 <TerminalInterface />
               </div>

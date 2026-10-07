@@ -1,5 +1,5 @@
 export const TERMINAL_COLORS = {
-  primary: '#9068F7',
-  background: '#111111',
-  backgroundTransparent: 'rgba(17, 17, 17, 0.5)',
+  primary: '#FFB000',
+  background: '#16130C',
+  backgroundTransparent: 'rgba(22, 19, 12, 0.5)',
 } as const;

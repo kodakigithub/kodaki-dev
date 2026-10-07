@@ -40,14 +40,14 @@ const MobileBottomNav = () => {
               aria-current={active ? 'page' : undefined}
               className={`flex flex-col items-center justify-center gap-1 px-3 py-2 rounded-lg transition-all min-w-[60px] ${
                 active
-                  ? 'text-purple-400'
+                  ? 'text-amber-400'
                   : 'text-zinc-500 hover:text-zinc-300'
               }`}
             >
               <span className="text-lg" aria-hidden="true">{item.icon}</span>
               <span className="text-[10px] font-mono font-medium">{item.label}</span>
               {active && (
-                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 rounded-full bg-purple-400" />
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 rounded-full bg-amber-400" />
               )}
             </button>
           );

@@ -46,7 +46,7 @@ const ContactView = () => {
                     <AsciiArtAnimator
                         art={contactAscii}
                         className="text-[2.25px] xs:text-[2.7px] sm:text-[3.6px] md:text-[4.5px] leading-none whitespace-pre crt-glow"
-                        style={{ fontFamily: 'monospace', color: '#9068F7' }}
+                        style={{ fontFamily: 'monospace', color: '#FFB000' }}
                     />
                 </div>
 

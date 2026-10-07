@@ -68,10 +68,10 @@ export default function NotFound() {
 
   return (
     <>
-      <div className="h-screen w-screen fixed inset-0 overflow-hidden flex p-2 sm:p-3 md:p-4 lg:p-6 pb-16 lg:pb-6" style={{ background: '#1a1a1a' }}>
+      <div className="h-screen w-screen fixed inset-0 overflow-hidden flex p-2 sm:p-3 md:p-4 lg:p-6 pb-16 lg:pb-6" style={{ background: '#1C1811' }}>
         <div className="flex-1 h-full max-w-article mx-auto w-full flex flex-col font-mono text-xs sm:text-sm">
         {/* Header */}
-        <div className="border-b border-zinc-800 px-2 sm:px-3 md:px-4 py-2 sm:py-3 md:py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-0 bg-[#111111] rounded-t-lg">
+        <div className="border-b border-zinc-800 px-2 sm:px-3 md:px-4 py-2 sm:py-3 md:py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-0 bg-[#16130C] rounded-t-lg">
           <div className="flex items-center gap-2 sm:gap-3">
             <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500 animate-pulse"></div>
             <span className="text-zinc-400 text-xs sm:text-sm">System Status:</span>
@@ -83,7 +83,7 @@ export default function NotFound() {
         </div>
 
         {/* Logs Area */}
-        <div className="flex-1 overflow-y-auto px-2 sm:px-3 md:px-4 py-2 sm:py-3 md:py-4 space-y-0.5 sm:space-y-1 bg-[#111111] text-zinc-300 border-x border-zinc-800">
+        <div className="flex-1 overflow-y-auto px-2 sm:px-3 md:px-4 py-2 sm:py-3 md:py-4 space-y-0.5 sm:space-y-1 bg-[#16130C] text-zinc-300 border-x border-zinc-800">
           {logs.map((log) => (
             <div key={log.id} className="flex gap-1.5 sm:gap-2 md:gap-4 hover:bg-zinc-900/30 p-1 rounded text-[10px] xs:text-xs sm:text-sm">
               <span className="text-zinc-600 select-none w-16 sm:w-20 md:w-24 flex-shrink-0 text-[9px] xs:text-[10px] sm:text-xs">{log.timestamp}</span>
@@ -99,7 +99,7 @@ export default function NotFound() {
         </div>
 
         {/* Actions Footer */}
-        <div className="border-t border-b border-x border-zinc-800 px-2 sm:px-3 md:px-4 py-2 sm:py-3 md:py-4 bg-[#111111] flex items-center gap-3 sm:gap-4 rounded-b-lg">
+        <div className="border-t border-b border-x border-zinc-800 px-2 sm:px-3 md:px-4 py-2 sm:py-3 md:py-4 bg-[#16130C] flex items-center gap-3 sm:gap-4 rounded-b-lg">
           <Link
             href="/"
             className="px-3 sm:px-4 py-2 sm:py-2.5 bg-zinc-800 text-zinc-200 border border-zinc-700 rounded hover:bg-zinc-700 transition-colors font-medium text-[10px] sm:text-xs uppercase tracking-wider flex items-center gap-1.5 sm:gap-2"

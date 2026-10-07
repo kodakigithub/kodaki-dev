@@ -9,7 +9,7 @@ interface TerminalBackButtonProps {
 
 const TerminalBackButton: React.FC<TerminalBackButtonProps> = ({ 
   onClick, 
-  variant = 'purple',
+  variant = 'amber',
   className 
 }) => {
   const baseStyles = "ml-2 px-2 py-0.5 text-sm border rounded cursor-pointer transition-colors";
